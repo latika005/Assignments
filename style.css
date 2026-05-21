@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Roboto:wght@400&display=swap');
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html, body{
+    margin : 0;
+    padding : 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  border-radius: 10px;
+}
+#bright-yellow {
+    background-color: #F9E000;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#light-yellow {
+    background-color: #F9E000;
+    width: 40%;
+    height: 100%;
+    filter: brightness(150%);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#screen{
+    padding: 15px;
+    width : 100vw;
+    height : 100vh;
+    position : relative;
+    display : flex;
+    overflow-x: hidden;
+}
+
+#navbar{
+    padding: 13px;
+    padding-inline : 27px;
+    width : 95%;
+    z-index: 999;
+    position: fixed;
+    background-color : transparent;
+    font-family: pokemon-solid;
+    display : flex;
+    justify-content : space-between;
+    align-items: center;
+    margin  : 10px;
+    left : 20px;
+}
+
+img{
+    width : 150px;
+}
+
+#icon{
+    font-size : 30px;
+}
+h5{
+    font-size : 20px;
+    font-weight : 600;
+    color : #000000;
+    margin-bottom : 10px;
+    letter-spacing: 6px;
+}
+
+h1{
+    font-size : 100px;
+    font-weight : 400;
+}
+
+p{
+    font-size : 15px;
+    font-weight : 400;
+    color : #000000;
+    width : 68%;
+    line-height : 30px;
+}
+
+#text{
+    padding : 36px;
+    line-height: 1.2;
+}
+
+#pikachu{
+    position : fixed;
+    z-index : 999;
+    left : 570px;
+    top :  29px;
+}
+#pikachu img{ 
+    width : 490px;
+}
+
+#pokeball{
+    position : fixed;
+    left : 70px;
+    bottom : 2px;
+}
+#pokeball img{
+    width : 250px;
+    color: #000000;
+}
+
+#navigation{
+    position : fixed;
+    z-index: 999;
+   right : 30px;
+}
+
+#navigation img{
+    width : 60px;
+}
