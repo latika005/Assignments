@@ -1,0 +1,119 @@
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+*{
+    padding : 0;
+    margin : 0;
+    font-family: Poppins;
+    box-sizing :border-box;
+    color : white;
+}
+html, body{
+    height : 120%;
+    width : 100%;
+    background-color: rgb(16, 16, 16);
+}
+main{
+    padding : 15px;
+    position : relative;
+}
+#nav{
+    display :  flex;
+    align-items : center;
+    justify-content: space-between;
+}
+#nav button{
+    background-color: rgba(44, 44, 44, 0.838);
+    padding : 12px;
+    width : 120px;
+    color : rgba(255, 255, 255, 0.833);
+    border-radius : 8px;
+    border : transparent;
+}
+#nav-contents{
+      display :  flex;
+    align-items : center;
+    justify-content: space-around;
+    gap : 36px;
+}
+#nav-contents h4{
+    font-weight : 400;
+}
+#header{
+    grid-area: header;
+    text-align: center;
+    margin-top : 20px;
+}
+#header h1{
+    font-size : 108px;
+    font-weight: 600;
+}
+#catogaries{
+    grid-area: catogaries;
+    display: flex;
+    align-items: center;
+    gap : 40px;
+    justify-content: center;
+    margin-top : 20px;
+} 
+.selected{
+    padding : 10px 25px;
+    background-color: rgba(36, 36, 36, 0.797);
+    border-radius: 34px;
+    text-align: center;
+    font-weight : 400;
+}
+#selected{
+    background-color: rgb(236, 83, 12);
+}
+#images{
+    padding-top: 40px;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    gap : 60px;
+}
+#img{
+    width: 100%;  /* Define your container size */
+    height: 300px;
+    overflow: hidden;
+}
+#img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    object-position : bottom center;
+}
+#text{
+    padding : 12px;
+}
+#contents{
+    display: flex;
+    flex-direction: column;
+    gap : 20px;
+    text-align : left;
+    border-radius: 20px;
+    background-color : rgb(23, 23, 23);
+    padding-bottom : 10px;
+}
+#text p{
+    color : rgba(255, 255, 255, 0.584);
+    padding-top: 10px;
+}
+#text h2{
+    padding-top: 10px;
+    line-height: 25px;;
+    font-weight : 400;
+}
+#text h4{
+    color: rgb(241, 102, 16);
+     padding :5px 15px;
+     width :fit-content;
+    background-color: rgb(107, 47, 10);
+    border-radius: 34px;
+    text-align: center;
+    font-weight : 400;
+}
