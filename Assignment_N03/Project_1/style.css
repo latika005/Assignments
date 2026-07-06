@@ -1,0 +1,142 @@
+*{
+    padding :  0;
+    margin : 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+html, body{
+    height  : fit-content;
+    width : auto;
+    box-sizing: border-box;
+}
+main{
+    padding : 30px;
+    background : radial-gradient( rgb(100, 12, 41),rgb(49, 11, 33) , rgb(39, 8, 81));
+    color : white;
+}
+nav{
+    padding-inline : 50px;
+    display: flex;
+    align-items : center;
+    justify-content: space-between;
+}
+#squidLogo{
+    height : 40px;
+    width : auto;
+}
+#squidLogo img{
+    height: 100%;
+    width : 100%;
+    object-fit: contain;
+}
+#navElem{
+    display: flex;
+    align-items: center;
+    gap : 25px;
+}
+#navElem h4{
+    font-weight: 300;
+}
+#menu i{
+    font-size: 22px;
+    color : rgb(206, 204, 204);
+}
+#middleLayout{
+    display: flex;
+    justify-content: space-around;
+    padding-top : 30px;
+}
+#leftLayout{
+    padding-left: 35px;
+    height : 100%;
+    width : 100%;
+    display: flex;
+    flex-direction: column;
+    gap : 20px;
+}
+#buttons{
+    padding-top: 15px;
+    display: flex;
+    gap :  60px;
+}
+#buttons button{ 
+    border-radius: 8px;
+    padding : 14px 44px;
+    display: flex;
+    align-items: center;
+    gap : 10px;
+    cursor: pointer;
+    color : white;
+}
+#buttons button i{
+    font-size : 30px;
+    color : white;
+}
+.play-now{
+    background : linear-gradient(to right,rgb(240, 40, 113), rgb(228, 57, 85), rgb(227, 141, 28));
+    border : none;
+}
+.watch-now{
+    border: 2px solid rgb(228, 57, 85);
+    background-color : transparent;
+}
+#rightLayout{
+    height : 100%;
+    width  : 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#squidLogo2{
+    padding-top : 50px;
+    height : 35%;
+    width : auto;
+}
+#squidLogo2 img{
+    height : 70%;
+    width : 70%;
+    object-fit : cover;
+}
+#leftText h5{
+    color : rgb(203, 201, 201);
+    font-size : 15px;
+    font-weight: 300;
+}
+#SquidGameImage{
+    height : 400px;
+    width : 500px;
+}
+#SquidGameImage img{
+   height : 100%;
+    width : 85%;
+    object-fit: cover;
+    object-position : center;
+    border-radius: 30px;
+}
+#columns{
+    padding-top: 30px;
+    height : 400px;
+    width  :100%;
+    display: flex;
+    align-items: center;
+    gap : 20px;
+}
+#box{
+    padding : 20px;
+    height : 66%;
+    width : 70%;
+    border-radius: 20px;
+    overflow: hidden;
+    background: linear-gradient(rgba(65, 6, 107, 0.674), rgba(126, 8, 47, 0.683));
+}
+#box img{
+    height: 100%;
+    width : 100%;
+    object-fit :cover;
+    background-position: center;
+    border-radius: 10px;
+}
+#columns{
+}
+
+/* background : radial-gradient( rgb(126, 8, 48),rgb(85, 13, 53) , rgb(50, 6, 107)); */

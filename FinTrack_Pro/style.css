@@ -1,0 +1,500 @@
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+:root{
+    --padding-xs : 5px;
+    --padding-s : 10px;
+    --padding-m : 15px;
+    --padding-l : 20px;
+    --padding-xl : 25px;
+    --padding-xxl : 30px;
+    --padding-3xl : 40px;
+    --padding-4xl : 50px;
+    --padding-5xl : 60px;
+    --padding-6xl : 66px;
+
+    --font-size-xs : 12px;
+    --font-size-s : 14px;
+    --font-size-m : 18px;
+    --font-size-l : 20px;
+    --font-size-xl : 22px;
+
+    --font-weight-s : 200;
+    --font-weight-m : 300;
+    --font-weight-l : 400;
+    --font-weight-xl : 600;
+
+    --border-radius-s :  10px;
+    --border-radius-m : 15px;
+    --border-radius-l : 20px;
+}
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+    background-color: rgb(32, 31, 31);
+    color : whitesmoke;
+    font-family: "Poppins";
+}
+
+html, body{
+    height : 100%;
+    width : 100%;
+}
+main{
+    display : flex;
+    gap : var(--padding-m);
+}
+.dashboard{
+    flex-grow : 1;
+    display: flex;
+    gap  : var(--padding-l);
+    flex-direction : column;
+    padding-inline: var(--padding-m);
+    padding-bottom : var(--padding-l);
+}
+.dashboard h1{
+    font-weight: var(--font-weight-l);
+}
+nav{
+    padding-top : var(--padding-s);
+    padding-inline : var(--padding-xs);
+    padding-bottom: var(--padding-s);
+    display : flex;
+    justify-content :flex-end;
+    align-items: center;
+    border-bottom: 1px solid whitesmoke;
+}
+.users-info{
+    display: flex;
+    gap : var(--padding-l);
+    align-items : center;
+}
+.users-info h3{
+    font-weight : var(--font-weight-m);
+    font-size: var(--font-size-s);
+}
+.users-info button{
+    display: flex;
+    padding : var(--padding-s) var(--padding-s);
+    border-radius: var(--border-radius-s);
+    gap : var(--padding-s);
+    align-items: center;
+    border : 1px solid whitesmoke;
+    outline : none;
+    cursor: pointer;
+    transition : transform 0.1s ease;
+}
+button:active{
+    transform : scale(0.95);
+}
+.Transaction-layout{
+    margin-top : var(--padding-l);
+    display: flex;
+    flex-direction: column;
+}
+.Transaction-info{
+    margin-top : var(--padding-m);
+    display : flex;
+    align-items : center;
+    justify-content :space-between;
+}
+.various-transactions{
+    display : flex;
+    min-width : 24%;
+    flex-direction : column;
+    gap : 3px;
+    border : 1px solid whitesmoke;
+    padding : var(--padding-l) var(--padding-3xl);
+    border-radius: var(--border-radius-s);
+}
+.various-transactions h4{
+    margin-top : var(--padding-s);
+    font-weight : var(--font-weight-m);
+    font-size : var(--font-size-s);
+}
+.various-transactions h2{
+    font-weight : var(--font-weight-l);
+    font-size : var(--font-size-xl);
+}
+.various-transactions .transactions-icons{
+    width : fit-content;
+    padding : var(--padding-s) var(--padding-l);
+    border-radius:  var(--border-radius-s);
+    border : 1px solid whitesmoke;
+}
+.Cash-Flow-Analysis_Preferences{
+    display: flex;
+    justify-content: space-between;
+}
+.transaction-graph{
+    width : 65%;
+    border: 1px solid white;
+    height: 60vh;
+    border-radius : var(--border-radius-s);
+}
+.dark-mode{
+    padding : var(--padding-m);
+    width : 33%;
+    height : fit-content;
+    border: 1px solid white;
+    border-radius : var(--border-radius-s);
+    display: flex;
+    flex-direction: column;
+    gap : var(--padding-s);
+}
+.color-mode-switch{
+    width : 80px;
+    height : 50px;
+    /* background-color: aliceblue; */
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    background-color: rgb(19, 71, 117);
+    width : 50px;
+    height : 30px;
+    border-radius : var(--border-radius-l);
+    cursor : pointer;
+    position : relative;
+}
+.button::before{
+    position : absolute;
+    content : '';
+    background-color: aliceblue;
+    height : 23px;
+    width : 23px;
+    border-radius : 100%;
+    margin : 3px;
+    transition : 0.3s ease-out;
+}
+input:checked + .button{
+    background-color:rgb(134, 190, 171);
+}
+input:checked + .button:before{
+    transform : translate(20px);
+}
+.color-mode-switch input{
+    display: none;
+}
+.color-mode{
+    display : flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.reset-button{
+    padding : var(--padding-s);
+    padding-inline: var(--padding-4xl);
+    border-radius: var(--border-radius-s);
+    outline : none;
+    transition : transform ease 0.1s;
+    cursor : pointer;
+    border : 1px solid whitesmoke;
+    display : flex;
+    gap : var(--padding-s);
+    justify-content: center;
+    align-items: center;
+}
+.navigation-bar{
+    z-index : 99;
+    min-height : 95vh;
+    padding : var(--padding-s) var(--padding-l);
+    display: flex;
+    flex-direction : column;
+    gap : var(--padding-4xl);
+    align-items: center;
+    width : 20vw;
+    border-right: 1px solid whitesmoke;
+}
+.pages-buttons{
+    display : flex;
+    flex-direction: column;
+    gap : var(--padding-m);
+}
+.dashboard-page-button{
+     display : flex;
+     gap : var(--padding-m);
+    align-items: center;
+    padding : var(--padding-s) var(--padding-3xl);
+    border-radius: var(--border-radius-s);
+    border : 1px solid whitesmoke;
+    cursor: pointer;
+}
+.settings-button{
+     display : flex;
+     gap : var(--padding-m);
+      align-items: center;
+     padding : var(--padding-s) var(--padding-3xl);
+      border-radius: var(--border-radius-s);
+      border : 1px solid whitesmoke;
+      cursor: pointer;
+}
+.Add-transaction{
+     display : flex;
+     gap : var(--padding-s);
+     align-items: center;
+     padding : var(--padding-s) var(--padding-3xl); 
+     border-radius: var(--border-radius-s);  
+     bottom : 5%;
+     left : 1.5%;
+     position : fixed;
+     border : 1px solid whitesmoke;
+     cursor: pointer;
+}
+.transaction-graph{
+    padding : var(--padding-s);
+}
+
+.transaction-graph h2{
+    font-weight : var(--font-weight-l);
+    font-size: var(--font-size-xl);
+}
+.transactions{
+    height : fit-content;
+    width : 48vw;
+    min-width: fit-content;
+    padding : var(--padding-m)  var(--padding-m);
+    display : flex;
+    flex-direction : column;
+    align-items: center;
+    justify-content: space-between;
+    gap : var(--padding-m);
+    border-radius: var(--border-radius-s);
+    border : 1px solid whitesmoke;
+}
+.transaction-details{
+    display: flex;
+    gap : 5vw;
+    align-items: center;
+}
+.transaction-details p{
+    font-size : var(--font-size-s);
+    font-weight : var(--font-size-s);
+}
+.transaction-search{
+    display : flex;
+    justify-content: space-between;
+    gap : var(--padding-s);
+}
+.search-bar {
+    height : var(--padding-3xl);
+    width : 32vw;
+    display: flex; 
+    align-items: center;    
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius-s);
+}
+.search-bar #input{
+    width: 100%;
+    height: 100%;
+    padding: var(--padding-s) var(--padding-xxl);
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+     border-radius: var(--border-radius-s);
+     outline : none;
+}
+.transactions select{
+    padding : var(--padding-s) var(--padding-xxl);
+    outline : none;
+    border : 1px solid whitesmoke;
+    border-radius : var(--border-radius-s);
+}
+.settings{
+    position : absolute;
+    display : flex;
+    flex-direction: column;
+    width : 76.5vw;
+    right : 0;
+    visibility: hidden;
+}
+.settings nav{
+    height : 10px;
+    padding : var(--padding-s) var(--padding-xs);
+    width : 100%;
+    height: fit-content;
+    align-items: start;
+}
+.heading-text{
+    padding-top : var(--padding-m);
+}
+.setting-info{
+    padding : var(--padding-l);
+    width : 100%;
+    height : 100%;
+    display : flex;
+    flex-direction: column;
+    gap : var(--padding-4xl);
+}
+.heading-text h2{
+    font-size : 32px;
+    font-weight: var(--font-weight-l);
+
+}
+.profile-details{
+    padding : var(--padding-xl) var(--padding-xxl);
+    border : 1px solid whitesmoke;
+    border-radius : var(--border-radius-s);
+    width : 40vw;
+    display: flex;
+    flex-direction: column;
+    gap : var(--padding-xl);
+}
+.profile-details h2{
+    font-weight: var(--font-weight-m);
+}
+.form{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom : var(--padding-m);
+}
+.form .name input{
+    padding : var(--padding-s) var(--padding-l);
+    width : 18vw;
+    outline : none;
+    border-radius : var(--border-radius-s);
+    border : 1px solid whitesmoke;
+}
+.form .name p{
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-s);
+}
+.form .currency p{
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-s);
+}
+.form .currency select{
+    padding : var(--padding-s) var(--padding-l);
+    width : 16vw;
+    outline : none;
+    border-radius : var(--border-radius-s);
+    border : 1px solid whitesmoke;
+    cursor : pointer;
+}
+.profile-details button{
+    padding : var(--padding-s) var(--padding-m);
+    border-radius : var(--border-radius-s);
+    outline : none;
+    cursor : pointer;
+    outline : none;
+    border : 1px solid whitesmoke;
+    transition : transform 0.1s ease;
+}
+button:active{
+    transform : scale(0.95);
+}
+.make-new-transaction{
+    height : 100vh;
+    width : 100%;
+    position : fixed;
+    background-color : rgba(255, 255, 255, 0.356);
+    z-index : 500;
+    display : flex;
+    align-items : center;
+    justify-content: center;
+    visibility : hidden;
+}
+.bg{
+    height : 100vh;
+    width : 100%;
+    position : fixed;
+    background-color: transparent;
+}
+.new-form{
+    width : 30%;
+    z-index : 900;
+    padding : var(--padding-l) var(--padding-3xl); 
+    display : flex;
+    flex-direction : column;
+    align-items: center;
+    gap : var(--padding-m);
+    border-radius : var(--border-radius-s);
+}
+.new-form input{
+    width : 25vw;
+    padding : var(--padding-xs) var(--padding-s);
+    border-radius : var(--border-radius-s);
+    border : 1px solid whitesmoke;
+    outline : none;
+}
+.new-form select{
+    width : 25vw;
+    padding : var(--padding-xs) var(--padding-s);
+    border-radius : var(--border-radius-s);
+    outline : none;
+    border : 1px solid whitesmoke;
+    cursor : pointer;
+}
+.new-form button{
+     margin-top : var(--padding-s);
+     width : 25vw;
+     padding : var(--padding-s) var(--padding-m);
+     border-radius : var(--border-radius-s);
+     border : 1px solid whitesmoke;
+     cursor : pointer;
+}
+.done-transactions{
+    padding : var(--padding-m) var(--padding-xs);
+    height : 4vw;
+    width : 46vw;
+    border : 1px solid rgba(245, 245, 245, 0.541);
+    border-radius : var(--border-radius-s);
+    display : flex;
+    gap : 80px;
+    justify-content: space-between;
+    align-items : center;
+    flex-shrink: 0;
+}
+.done-transactions p{
+    font-size : var(--font-size-xs);
+    font-weight : var(--font-weight-s);
+    width : 140px;
+    display : flex;
+    gap : var(--padding-s);
+}
+.done-transactions .actions{
+    cursor : pointer;
+    font-size : var(--font-size-s);
+}
+.lists{
+    padding : var(--padding-s);
+    width : 100%;
+    display : flex;
+    flex-direction : column;
+    gap :7px;
+    min-height : 20vh;
+    max-height: fit-content;
+    border : 1px solid white;
+    overflow :scroll;
+}
+
+/* Replace .your-container-class with body, html, or your specific div class */
+.lists{
+    /* 1. Hide scrollbar for Chrome, Safari, and Opera */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    /* Optional: Ensure scrolling still works */
+    overflow: auto; 
+}
+#editBtn{
+    background-color: rgb(45, 219, 45);
+    padding : var(--padding-xs);
+    border-radius: var(--border-radius-s);
+}
+
+#DeleteBtn{
+    background-color: rgb(234, 81, 81);
+    padding : var(--padding-xs);
+    border-radius: var(--border-radius-s);
+}
+#editBtn:active {
+    background-color: darkgreen;
+    transform: scale(0.95); /* Optional click effect */
+}
+#DeleteBtn:active {
+    background-color: darkred;
+    transform: scale(0.95); /* Optional click effect */
+}

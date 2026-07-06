@@ -1,0 +1,214 @@
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+    font-family : "Poppins";
+}
+/* vw - viewport-width depending upon screen-width
+vh - viewport-height depending upon screen-height
+vmax - joh viewport maximum hain, if vw is max it will take that otherwise vh
+vmin - joh viewport minimium hain, if vw is min it will take that otherwise vh
+1 em - in-ratio with parent div
+1 rem - 16px ( according to the root )
+1ch - width of text
+lh - line height */
+/* 
+creating variables in CSS -->  */
+:root{
+    --bg-color : #000000;
+    --primary-text-color : #f4f4f4;
+    --bg-button-color : #1a1a1a;
+    --bg-task-color : rgb(34, 33, 33);
+    --task-form-color : rgb(54, 53, 53);
+    --delete-color : #ff4d4d;
+    --form-color : rgb(39, 38, 38);
+
+    /* padding variables */
+    --nav-padding : 15px 30px;
+    --section-padding : 15px 30px;
+    --padding-s : 5px;
+    --padding-m : 10px;
+    --padding-l : 15px;
+    --padding-xl : 20px;
+    --padding-xxl : 30px;
+
+    /* Border-radius */
+    --border-radius-s : 5px;
+    --border-radius-m : 10px;
+    --border-radius-l : 15px;
+    --border-radius-xl : 20px;
+    --border-radius-xxl : 30px;
+
+    /* Font-weight */
+    --font-weight-light : 100;
+    --font-weight-regular : 300;
+    --fot-weight-bold : 500;
+
+    /* font-size */
+    --font-size-sm : 14px;
+    --font-size-m : 20px;
+    --font-size-bold : 24px;
+
+    /* Margin */
+    --margin-s : 5px;
+    --margin-m : 10px;
+    --margin-xl : 15px;
+
+}
+html, body{
+    height : 100%;
+    width :  100%;
+}
+main{
+    height : 100%;
+    display : flex;
+    flex-direction : column;
+}
+body{
+    background-color: var( --bg-color );
+    color : var( --primary-text-color );
+}
+nav{
+    padding : var(--nav-padding);
+    display : flex;
+    align-items : center;
+    justify-content: space-between;
+}
+nav button{
+    background-color : var(--bg-button-color);
+    border : none;
+    outline : none;
+    cursor: pointer;
+    color : var(--primary-text-color);
+    padding : var(--padding-m) var(--padding-m);
+    border-radius : var(--border-radius-m);
+}
+section{
+    padding : var(--section-padding);
+    display: flex;
+    flex-grow : 1;
+    gap : var(--padding-xxl);
+    justify-content: space-between;
+}
+
+section .task-column{
+    display : flex;
+    flex-direction : column;
+    flex-grow : 1;
+    background-color: var(--bg-button-color);
+    border-radius : var(--border-radius-m);
+}
+section .task-column .heading{
+    width : 100%;
+    display : flex;
+    justify-content : space-between;
+    padding : var(--padding-m);
+}
+section .task-column .left{
+    font-weight : var(--font-weight-regular);
+    font-size : var(--font-size-sm);
+}
+section .task-column .right{
+    font-weight : var(--font-weight-regular);
+    font-size : var(--font-size-sm);
+}
+/* Used display for parent div */
+section .task-column .task{
+    margin : var(--margin-s) var(--margin-m);
+    padding : var(--padding-m);
+    background-color : var(--bg-task-color);
+    border-radius : var(--border-radius-s);
+    display : flex;
+    flex-direction : column;
+    cursor : grab;
+    transition: translate 0.5s ease-in-out;
+} 
+section .task-column.hover-over{
+    border : 2px dashed var(--primary-text-color);
+    scale : 1.05;
+} 
+/* .task-column:active{
+    border : 2px dashed var(--primary-text-color);;
+    scale : 1.05;
+} */
+section .task-column .task h2{
+    font-size : var(--font-size-m);
+    font-weight : var(--font-weight-regular);
+}
+section .task-column .task p{
+    font-weight : var(--font-weight-light);
+}
+/* Since the parent has
+ display : flex,
+ we can use align-self on the child to move it to a side */
+section .task-column .task button{
+    align-self : flex-end;
+    cursor : pointer;
+    padding : var(--border-radius-s) var(--padding-l);
+    border-radius: var(--border-radius-s);
+    border : none;
+    outline : none;
+    background-color : var(--delete-color);
+    color : var(--primary-text-color);
+    transition : translate 0.8s ease;
+}
+button:active{
+    transform : scale(1.05);
+}
+.model{
+    height : 100vh;
+    width : 100vw;
+    position: fixed;
+    top : 0;
+    left : 0;
+    display : none;
+    align-items: center;
+    justify-content: center;
+}
+.model.active{
+    display : flex;
+}
+.model .center{
+    width : 35%;
+    height : 60%;
+    padding : var(--padding-xxl);
+    display : flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap : var(--padding-l);
+    border-radius : var(--border-radius-l);
+    z-index : 10;
+    border : 3px solid var(--task-form-color);
+}
+.model .bg{
+    position : absolute;
+    height : 100%;
+    width : 100%;
+    background-color: #0000004e;
+    backdrop-filter: blur(6px);
+}
+.model .center input, .model .center textarea, .model .center select{
+    background-color: var(--task-form-color);
+    border: none;
+    outline : none;
+    color : var(--primary-text-color);
+    padding : var(--padding-xl);
+    border-radius: var(--border-radius-s);
+}
+
+.model .center button{
+    cursor : pointer;
+    border-radius: var(--border-radius-m);
+    outline : none;
+    border : 2px solid var(--task-form-color);
+    background-color: var(--bg-task-color);
+    color : var(--primary-text-color);
+    padding : var(--padding-m) var(--padding-l);
+}
+ 

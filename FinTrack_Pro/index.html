@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="navigation-bar">
+            <div class="text">
+            <h1>Fintrack Pro</h1>
+            <p>Enterprise Finance</p>
+            </div>
+            <div class="pages-buttons">
+            <button class="dashboard-page-button"><i class="ri-dashboard-line"></i>Dashboard</button>
+            <button class="settings-button"><i class="ri-list-settings-line"></i>Settings</button>
+            </div>
+            <button class="Add-transaction"><i class="ri-sticky-note-add-line"></i>Add Transaction</button>
+        </div>
+
+<div class="make-new-transaction">
+    <div class="bg"></div>
+    <div class="new-form">
+        <h3>Add Transaction</h3>
+            <div class="type">
+              <p>Type</p>
+              <select class="transaction-type" required name="type" id="type">
+                <option value="Income">Income</option>
+                <option value="Expense">Expense</option>
+              </select>
+            </div>
+            <div required class="description">
+                <p>Description</p>
+                <input required type="text" placeholder="e.g. Amazon, Salary, Coffee">
+            </div>
+            <div class="amount-and-data">
+               <div class="amount">
+                <p>Amount</p>
+                <input required type="text" placeholder="amount">
+               </div>
+               <div class="date">
+                <p>Date</p>
+                <input required type="date">
+               </div>
+            </div>
+            <div required class="category">
+                <p>Category</p>
+                <select class="Category" required id="">
+                    <option value="Select a category">Select a category</option>
+                    <option value="Food & dining">Food & dining</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Recharge & Bills">Recharge & Bills</option>
+                    <option value="Petrol & Auto">Petrol & Auto</option>
+                    <option value="Utilities">Utilities</option>
+                    <option value="Salary">Salary</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <button class="submitNewTransaction" type="submit">Add Transaction</button>
+    </div>
+</div>
+
+        <div class="dashboard">
+            <nav>
+                <div class="users-info">
+                <h3>User`s name</h3>
+                <button><i class="ri-logout-box-r-line"></i>Logout</button>
+                </div>
+            </nav>
+            <div class="Transaction-layout">
+            <h1>Financial Overview</h1>
+            <p>Real-time tracking application</p>
+
+            <div class="Transaction-info">
+                 <div class="various-transactions">
+                    <div class="transactions-icons">
+                        <i class="ri-wallet-line"></i>
+                    </div>
+                    <h4>Current Balance</h4>
+                    <h2>$0.00</h2>
+                </div>
+                <div class="various-transactions">
+                    <div class="transactions-icons">
+                        <i class="ri-bank-line"></i>
+                    </div>
+                    <h4>Total Income</h4>
+                    <h2>$0.00</h2>
+                </div>
+                <div class="various-transactions">
+                    <div class="transactions-icons">
+                        <i class="ri-bill-line"></i>
+                    </div>
+                    <h4>Total Expense</h4>
+                    <h2>$0.00</h2>
+                </div>
+                <div class="various-transactions">
+                    <div class="transactions-icons">
+                        <i class="ri-cash-line"></i>
+                    </div>
+                    <h4>Total Transactions</h4>
+                    <h2>$0.00</h2>
+                </div>
+            </div>
+               
+            </div>
+
+            <div class="Cash-Flow-Analysis_Preferences">
+                <div class="transaction-graph">
+                <h2>Cash Flow Analysis</h2>
+                </div>
+                <div class="dark-mode">
+                       <h3>Preferences</h3>
+                       <div class="color-mode">
+                         <p>Dark Mode</p>
+                    <div class="color-mode-switch">
+                            <input type="checkbox" id="check">
+                            <label for="check" class="button"></label>
+                    </div>
+                       </div>
+                    <button class="reset-button"><i class="ri-delete-bin-line"></i>Reset All Data</button>
+                </div>
+            </div>
+
+                <h3>All Transactions</h3>
+                <div class="transactions">
+                    <div class="transaction-search">
+                         <div class="search-bar">
+                    <input type="search" id="input" name="transaction" placeholder="Search Transactions : ">
+                </div>
+                <div class="selection">
+                    <select name="All Types" id="">
+                        <option value="">All Types</option>
+                        <option value="">Expenses Only</option>
+                        <option value="">Income Only</option>
+                    </select>
+                </div>
+                    </div>
+                 <div class="transaction-details">
+                    <p>DATE</p>
+                    <p>DESCRIPTION</p>
+                    <p>CATEGORY</p>
+                    <p>AMOUNT</p>
+                    <p>ACTIONS</p>
+            </div>
+           <div class="lists"></div>
+                </div>
+        </div>
+
+        <div class="settings">
+              <nav>
+                <div class="users-info">
+                <h3>User`s name</h3>
+                <button><i class="ri-logout-box-r-line"></i>Logout</button>
+                </div>
+            </nav>
+            <div class="setting-info">
+                <div class="heading-text">
+                      <h2>Settings</h2>
+                <p>Manage your account profile and app formatting.</p>
+                </div>
+                <div class="profile-details">
+                    <h2>Profile Details</h2>
+                    <div class="form">
+                         <div class="name">
+                          <p>Fullname</p>
+                       <input type="text" id="username" name="username" placeholder="Enter your name">
+                    </div>
+                    <div class="currency">
+                         <p>Primary Currency</p>
+                        <select name="" id="">
+                            <option value="">USD ($)</option>
+                            <option value="">EUR ()</option>
+                            <option value="">INR ()</option>
+                            <option value="">GPB ()</option>
+                            <option value="">JPY ()</option>
+                        </select>
+                    </div>
+                    </div>
+                    <button>Edit</button>
+                </div>
+            </div>
+        </div>
+  
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

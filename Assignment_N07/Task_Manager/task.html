@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="task.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <div class="left">Task-Manager</div>
+            <div class="right"><button id="toggle-modal">Add New Task</button></div> 
+        </nav>
+        <section class="board">
+            <div id="todo" class="task-column">
+                <div class="heading">
+                    <div class="left">To Do</div>
+                    <div class="right">Count</div>
+                </div>
+                <!-- <div draggable="true" class="task">
+                    <h2>Task 1</h2>
+                    <p>Task description</p>
+                    <button class="delete">Delete</button>
+                </div> -->
+            </div> 
+            <div id="progress" class="task-column">
+                <div class="heading">
+                <div class="left">In Progress</div>
+                <div class="right">Count</div>
+                </div>
+            </div>
+            <div id="completed" class="task-column">
+                <div class="heading">
+                    <div class="left">Done</div>
+                    <div class="right">Count</div>
+                </div>
+            </div>
+        </section>
+    </main>
+     <div class="model add-new-task">
+        <div class="bg">
+        </div>
+        <div class="center">
+              <input
+             id="task-title-input"
+             placeholder="Task Title"
+             type="text" 
+             class="Task-title">
+            <textarea 
+            id="task-description-input"
+            placeholder="Task description" id=""></textarea>
+            <button id="add-new-task" class="add-task-btn">Add Task</button>
+        </div>
+        </div>
+</body>
+<script src="task.js"></script>
+</html>
