@@ -171,7 +171,7 @@ button:active{
     margin : 3px;
     transition : 0.3s ease-out;
 }
-input:checked + .button{
+input:checked + .button{ 
     background-color:rgb(134, 190, 171);
 }
 input:checked + .button:before{

@@ -64,3 +64,11 @@ button{
     border : 3px solid rgb(190, 124, 237);
     font-size : 18px;
 }
+
+#inner-box img{
+    height : 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 20px;
+}

@@ -69,7 +69,7 @@ div.classList.add(".done-transactions");
    lists.appendChild(div);
  transactionForm.style.visibility = "hidden";
  document.body.style.overflow = "visible";
-
+ 
 document.querySelector(".description input").value = " ";
 document.querySelector(".amount input").value = " ";
 document.querySelector(".Category").value = " ";
