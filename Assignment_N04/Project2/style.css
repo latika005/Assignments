@@ -1,0 +1,423 @@
+*{
+    padding: 0;
+    margin : 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+html, body{
+    height : 120vh;
+    width : 100%;
+    background-color: rgb(251, 252, 235);
+}
+:root{
+    --padding-xs : 10px;
+    --padding-s : 15px;
+    --padding-m : 20px;
+    --padding-l : 25px;
+    --padding-xl : 30px;
+    --padding-xxl : 50px;
+
+    --font-size-xs : 14px;
+    --font-size-s : 18px;
+    --font-size-m : 22px;
+    --font-size-l : 28px;
+    --font-size-xl : 34px;
+
+    --border-radius-s : 10px;
+    --border-radius-m : 15px;
+    --border-radius-l : 20px;
+    --border-radius-xl : 30px;
+
+    --color-border : gray;
+}
+main{
+    height : 100vh;
+    width : 100%;
+    padding: var(--padding-s)  var(--padding-xxl);
+}
+nav{
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    /* color : white; */
+    border-bottom: 1px solid var(--color-border);
+    margin-bottom: var(--padding-xs);
+    padding-bottom: var(--padding-s);
+}
+.menu{
+    width : 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap : var(--padding-s);
+}
+.menu p{
+    cursor : pointer;
+    transition : all 0.3s ease;
+}
+.menu p:active{
+    font-size : 18px;
+    font-weight: bold;
+    transform : translateY(+3px)
+}
+.icons{
+    width : 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap : var(--padding-xs);
+}
+.icons i{
+    font-size : var(--font-size-m);
+    cursor : pointer;
+    transition : all 0.3s ease;
+}
+.icons i:hover{
+    transform : translateY(-2px);
+}
+.icons i:active{
+    transform : translateY(-2px);
+    font-size : 26px;
+    font-weight: bold;
+}
+.logo h5{
+    font-size : var(--font-size-l);
+    font-family: 'Courier New', Courier, monospace;
+}
+.grid-container{
+    height  :130%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 30% 25% 25% 20%;
+    grid-template-areas:
+    "box-1 box-2 box-2 box-2 box-3"
+    "box-7 box-4 box-5 box-6 box-8"
+    "box-7 box-4 box-5 box-6 box-8"
+    "box-7 box-4 box-5 box-6 box-8";
+    gap : 10px;
+    justify-content: center;
+    align-items: center;
+}
+.divisions{
+    height : 100%;
+    width : 100%;
+    /* background-color: aquamarine; */
+}
+#fifth-div{
+    border-radius: var(--border-radius-l);
+    background-color: rgb(232, 232, 96);
+}
+#fourth-div{
+    height : 85%;
+    width : 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: var(--border-radius-l);
+    gap : var(--padding-xs);
+}
+.box1{
+    height : 40%;
+    width: 100%;
+    background-color: rgb(237, 237, 221);
+    border-radius: var(--border-radius-l);
+    overflow: hidden;
+}
+.box1 img{
+    object-fit: cover;
+    height : 100%;
+    width : 100%;
+}
+.box2{
+    height: 60%;
+    width: 100%;
+    background-color: turquoise;
+    border-radius: var(--border-radius-l);
+    overflow: hidden;
+}
+.box2 img{
+    object-fit: cover;
+    height : 100%;
+    width : 100%;
+}
+#sixth-div{
+    border-radius: var(--border-radius-l);
+    height : 85%;
+    width : 100%;
+    display : flex;
+    flex-direction: column;
+    gap : var(--padding-xs);
+}
+.part1{
+    border-radius: var(--border-radius-l);
+    background-color: rgb(240, 128, 37);
+    height : 60%;
+    overflow: hidden;
+}
+.part1 img{
+    object-fit: cover;
+    height : 100%;
+    width : 100%;
+}
+.part2{
+    height : 100%;
+    width : 100%;
+    overflow: hidden;
+    border-radius: var(--border-radius-l);
+    background-color: rgb(39, 204, 241);
+    height: 40%;
+}
+.part2 img{
+    height : 100%;
+    width : 100%;
+    object-fit: cover;
+    object-position: top;
+}
+#eighth-div{
+    height : 100%;
+    width : 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: var(--border-radius-l);
+    gap : var(--padding-xl);
+}
+.section1{
+    height : 50%;
+    width: 100%;
+    background-color: rgb(28, 219, 130);
+    border-radius:  var(--border-radius-l);
+    overflow: hidden;
+}
+.section1 img{
+    object-fit: cover;
+    height : 100%;
+    width : 100%;
+}
+#seventh-div{
+    height: 100%;
+    width : 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius-l);
+}
+.section2{
+    height : 50%;
+    width : 100%;
+    background-color: rgb(245, 188, 122);
+    border-radius:  var(--border-radius-l);
+    overflow: hidden;
+}
+.section2 img{
+    height : 100%;
+    width : 100%;
+    object-fit: cover;
+}
+#second-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#second-div h1{
+    width : 590px;
+    font-size: 50px;
+    font-weight: 9400;
+    text-align: center;
+}
+#bottom{
+    padding : 30px;
+    height : 50%;
+    display : flex;
+    gap : 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.signature{
+    height : 85%;
+    width : 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+.signature h4{
+    font-size : 14px;
+    letter-spacing: 1.5px;
+}
+.blank{
+    height : 70%;
+}
+.signature i{
+    font-size : 32px;
+}
+.scroll-down-button{
+  height : 85%;
+  width : 100%;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scroll-down-button button{
+    padding : var(--padding-s) var(--padding-xl);
+    border-radius: var(--border-radius-m);
+    outline : none;
+    border: 1px solid gray;
+    cursor: pointer;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap : 5px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+    transition : all 0.3s ease;
+}
+.scroll-down-button button:hover{
+    transform : translateY(-3px);
+    box-shadow :  0 4px 12px rgba(0, 0, 0, 0.4);
+}
+.scroll-down-button  button i{
+    font-size: 25px;
+}
+.scroll-down-button button:active{
+    background-color: rgb(209, 206, 206);
+}
+.proceed-icon{
+    padding : var(--padding-xs);
+  height : 85%;
+  width : 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap : var(--padding-s);
+}
+.text{
+    height : 80%;
+    display : flex;
+    flex-direction: column;
+    align-items : left;
+    justify-content: center;
+    gap : 5px;
+}
+.text h5{
+    font-size : var(--font-size-s);
+    line-height: 18px;
+}
+
+.proceed-icon button{
+    padding : var(--padding-xs) var(--padding-xs);
+    border-radius: 100%;
+    border : none;
+    outline : none;
+    background-color: rgb(31, 31, 31);
+    cursor : pointer;
+    transition : all 0.3s ease;
+}
+.proceed-icon button:active{
+    transform : translateX(3px);
+    background-color: white;
+    color : black;
+}
+.proceed-icon button i{
+    font-size : var(--font-size-l);
+    color : white;
+}
+.proceed-icon button i:active{
+    color : black;
+}
+.proceed-icon h2{
+    font-size : 60px;
+    font-weight : 200;
+}
+#first-div{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.font h4{
+    font-size : var(--padding-m);
+    /* line-height: 20px; */
+    width :150px;
+}
+.font p{
+    font-size : 12px;
+    font-weight: 900;
+}
+.font{
+    position : absolute;
+    top : 40%;
+    left : 3%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    gap : var(--padding-xs);
+}
+.img1{
+    height : 60px;
+    width : 60px;
+    position: absolute;
+    top : 24%;
+    left: 8%;
+}
+.img1 img{
+    height :100%;
+    width : 100%;
+}
+.img2{
+     height : 60px;
+    width : 60px;
+    position: absolute;
+    top : 40%;
+    left :25%;
+}
+.img2 img{
+    height :100%;
+    width : 100%;
+}
+.img3{
+    height : 50px;
+    width : 50px;
+    position: absolute;
+    right : 7%;
+    top : 24%;
+}
+.img3 img{
+    height: 100%;
+    width: 100%;
+}
+.img4{
+     height : 50px;
+    width : 50px;
+    position: absolute;
+    top : 47.6%;
+}
+.img4 img{
+    height: 100%;
+    width: 100%;
+}
+#fifth-div{
+    height : 100%;
+    width : 100%;
+    overflow: hidden;
+}
+#fifth-div img{
+    height : 100%;
+    width : 100%;
+    object-fit: cover;
+}
+.text-circle{
+    position : absolute;
+    top : 32%;
+    right : 0.7%;
+    height : 40%;
+}
+.img6{
+    height : 50px;
+    width : 50px;
+}
+.img6 img{
+    object-fit: cover;
+    height : 100%;
+    width : 100%;
+}
