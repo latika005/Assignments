@@ -1,0 +1,247 @@
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+html, body{
+    position : absolute;
+    height : 100vh;
+    width : 100%;
+}
+main{
+    padding : 12px 10px;
+    height : 100%;
+    width : 100%;
+}
+button{
+    border : none;
+    outline : none;
+}
+.hero{
+    height : 95vh;
+    width : 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero img{
+    width : 100%;
+    height : 100%;
+    object-fit : fill;
+    flex-grow: 1;
+}
+nav{
+    padding : 20px 20px;
+    color : white;
+    height : 20%;
+    width : 100%;
+    position : absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top : 1%;
+}
+nav .elements{
+    width : 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav h4{
+    font-size : 4vw;
+}
+nav .elements button{
+    padding : 10px 20px;
+    border-radius : 10px;
+    cursor : pointer;
+    transition : transform 0.4s ease, box-shadow 0.4s ease;
+}
+nav .elements button:hover{
+    transform : translateX(2px);
+    transform : scale(1.2);
+    box-shadow : 1.5px 1.5px 12px rgb(62, 62, 62);
+}
+nav .elements button:active{
+    transform : translateX(2px);
+    transform : scale(1.2);
+    background-color :rgb(135, 135, 135);
+    box-shadow : 1.5px 1.5px 12px rgb(62, 62, 62);
+}
+nav .elements p{
+     cursor : pointer;
+}
+.text{
+    background-color: transparent;
+    position : absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color : rgb(174, 174, 174);
+}
+.text h1{
+    font-size : 8vw;
+}
+.text h4{
+    font-size : 3vw;
+}
+
+/* 2ND PAGE */
+
+.latest-articles{
+    height : 100%;
+    width : 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.heading3{
+    margin-top : 30px;
+    font-size : 5vw;
+}
+.border{
+    height : 1%;
+    width : 20%;
+    background-color: black;
+    border-radius: 7px;
+}
+.articles{
+    margin-top : 30px;
+    height : 60%;
+    width : 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 4vw;
+    margin-bottom : 20px;
+
+}
+.articles .article{
+    height : 100%;
+    width : 20%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow : 2px 2px 36px rgb(44, 44, 44);
+}
+.article-image{
+    height : 60%;
+    width : 100%;
+    overflow: hidden;
+}
+.article-image img{
+    height : 100%;
+    width : 100%;
+    object-fit : cover;
+}
+.info{
+    padding : 20px;
+    color : rgb(33, 33, 33);
+}
+/* 3rd PAGE */
+.about{
+    height : 100%;
+    width : 100%;
+    display : flex;
+    align-items: center;
+    justify-items: center;
+}
+.about .image{
+    height : 95%;
+    width : 50%;
+    background-color: blueviolet;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.about .image img{
+    height : 100%;
+    width : 100%;
+}
+.about .about-info{
+    padding : 20px 20px;
+    background-color: rgba(240, 248, 255, 0.578);
+    height : 95%;
+    width : 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+.about .about-info h2{
+    font-size : 4vw;
+}
+.about .about-info p{
+    text-align: justify;
+}
+/* Last Page */
+.last-page{
+    height : 90%;
+    width : 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.last-page h3{
+    font-size : 3vw;
+}
+.last-page p{
+    font-size : 1.5vw;
+}
+.last-page input{
+    padding : 15px 15px;
+    width : 30%;
+    border-radius : 20px;
+    border : 1px solid gray;
+}
+.last-part{
+    height : 48%;
+    width : 100%;
+    display: flex;
+    align-items: center;
+    gap : 6vw;
+}
+.last-part .icons{
+    height : 100%;
+    width : 50%;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    gap : 2.5vw;
+}
+
+.last-part .icons i{
+    cursor: pointer;
+    font-size: 3vw;
+    padding : 5px 5px;
+    border-radius : 10px;
+    transition : transform 0.4s ease, box-shadow 0.4s ease;
+}
+.last-part .icons i:hover{
+    transform : scale(1.2);
+}
+.last-part .icons i:active{
+    transform : scale(1.2);
+    box-shadow: 1px 1px 20px gray;
+}
+.last-part .details{
+    height : 100%;
+    width : 50%;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    gap : 2vw;
+}
+.last-part .details p{
+    cursor : pointer;
+    transition : transform 0.4s ease;
+}
+.last-part .details p:hover{
+    transform : scale(0.8);
+}
+.last-part .details p:active{
+    transform : scale(1.2);
+    font-weight: bold;
+}
